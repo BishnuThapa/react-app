@@ -1,14 +1,17 @@
 function ListGroup() {
+  const items = ["New York", "San Francisco", "Tokyo", "London", "Paris"];
+  // map function is used to converting each item to an different type
   return (
     //   Fragments for component can return multiple lines <> </>
     <>
-      <h1>List Group</h1>
+      <h1>List</h1>
       <ul className="list-group">
-        <li className="list-group-item">An item</li>
-        <li className="list-group-item">A second item</li>
-        <li className="list-group-item">A third item</li>
-        <li className="list-group-item">A fourth item</li>
-        <li className="list-group-item">And a fifth one</li>
+        {/*  to return data dynamically write inside {} */}
+        {items.map((item) => (
+          <li key={item} className="list-group-item">
+            {item}
+          </li>
+        ))}
       </ul>
     </>
   );
