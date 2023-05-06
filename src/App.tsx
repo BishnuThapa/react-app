@@ -16,3 +16,7 @@ function App() {
 }
 
 export default App;
+
+//  props are the input passed to a component, similar to function args, immutable
+
+//  state: internal data managed by a component that can change overtime,similar to local variable, mutable
