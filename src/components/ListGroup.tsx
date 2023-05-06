@@ -4,9 +4,11 @@ import { useState } from "react";
 interface Props {
   items: string[];
   heading: string;
+  // (item:string)=> void
+  onSelectItem: (item: string) => void;
 }
 
-function ListGroup({ items, heading }: Props) {
+function ListGroup({ items, heading, onSelectItem }: Props) {
   //   items = [];
   //   if (items.length === 0) return <p>No Items Found.</p>;
   // map function is used to converting each item to an different type
@@ -33,6 +35,7 @@ function ListGroup({ items, heading }: Props) {
             }
             onClick={() => {
               setSelectedIndex(index);
+              onSelectItem(item);
             }}
           >
             {item}
