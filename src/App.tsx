@@ -12,7 +12,9 @@ function App() {
         heading="Cities"
         onSelectItem={handleSelectItem}
       /> */}
-      <Button onClick={() => console.log("clicked")}>My Button</Button>
+      <Button color="primary" onClick={() => console.log("clicked")}>
+        My Button
+      </Button>
     </div>
   );
 }
