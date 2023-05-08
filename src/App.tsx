@@ -1,3 +1,4 @@
+import Button from "./components/Button";
 import ListGroup from "./components/ListGroup";
 function App() {
   let items = ["New York", "San Francisco", "Tokyo", "London", "Paris"];
@@ -6,11 +7,12 @@ function App() {
   };
   return (
     <div>
-      <ListGroup
+      {/* <ListGroup
         items={items}
         heading="Cities"
         onSelectItem={handleSelectItem}
-      />
+      /> */}
+      <Button onClick={() => console.log("clicked")}>My Button</Button>
     </div>
   );
 }
