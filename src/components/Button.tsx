@@ -1,6 +1,6 @@
 interface Props {
   children: string;
-  color?: string;
+  color?: string; // optional
   onClick: () => void;
 }
 

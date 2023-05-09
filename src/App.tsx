@@ -1,4 +1,5 @@
 import Button from "./components/Button";
+import Form from "./components/Form";
 import ListGroup from "./components/ListGroup";
 function App() {
   let items = ["New York", "San Francisco", "Tokyo", "London", "Paris"];
@@ -6,14 +7,17 @@ function App() {
     console.log(item);
   };
   return (
-    <div>
-      {/* <ListGroup
-        items={items}
-        heading="Cities"
-        onSelectItem={handleSelectItem}
-      /> */}
-      <Button onClick={() => console.log("clicked")}>My Button</Button>
-    </div>
+    // <div>
+    //   {/* <ListGroup
+    //     items={items}
+    //     heading="Cities"
+    //     onSelectItem={handleSelectItem}
+    //   /> */}
+    //   <Button onClick={() => console.log("clicked")}>My Button</Button>
+    // </div>
+    <>
+      <Form />
+    </>
   );
 }
 
